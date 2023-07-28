@@ -14,7 +14,7 @@ async function bootstrap() {
 			include: [ UsersModule,RegionsModule,VectorsModule]
 		});
 		SwaggerModule.setup('/explorer', app, document);
-	
+	console.log(`your server running:localhost:3000`)
   await app.listen(3000);
 }
 bootstrap();
